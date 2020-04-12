@@ -7,6 +7,7 @@ Deployed in [ehsanx.shinyapps.io/covid19/](https://ehsanx.shinyapps.io/covid19/)
 Data sources: 
 
 - World Health Organization (WHO: https://www.who.int/), 
+- World Bank Open Data (WB: https://data.worldbank.org/),
 - BCG world atlas (http://bcgatlas.org/) and 
 - Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE: https://github.com/CSSEGISandData/COVID-19). 
 
