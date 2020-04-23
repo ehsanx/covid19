@@ -4,8 +4,7 @@ library(shinydashboard)
 library(shinydashboardPlus)
 require(googleVis)
 
-dta <- load(file="C:\\Users\\wildscop\\Google Drive\\service\\ShinyApps\\covid19\\jhwbxx.RData")
-
+dta <- readRDS("data/covid.Rds")
 
 ui <- dashboardPage(
   dashboardHeader(title = "COVID-19 Map", dropdownMenu(
@@ -35,7 +34,7 @@ ui <- dashboardPage(
               htmlOutput("map1"),
               tabsetPanel(
                 tabPanel(h4('Data sources'),
-                         h6("1: World Health Organization (WHO: https://www.who.int/)", align = "left"),
+                         h6("1: World Bank Open Data (https://data.worldbank.org/)", align = "left"),
                          h6("2: Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE: https://github.com/CSSEGISandData/COVID-19)", align = "left")
                 ))
       ),
@@ -43,7 +42,7 @@ ui <- dashboardPage(
               htmlOutput("map2"),
               tabsetPanel(
                 tabPanel(h4('Data sources'),
-                         h6("1: World Health Organization (WHO: https://www.who.int/)", align = "left"),
+                         h6("1: World Bank Open Data (https://data.worldbank.org/)", align = "left"),
                          h6("2: Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE: https://github.com/CSSEGISandData/COVID-19)", align = "left")
                 ))
       ),
@@ -53,9 +52,9 @@ ui <- dashboardPage(
                 tabPanel(h4('Data sources'),
                          h6("1: BCG world atlas (http://bcgatlas.org/ to create BCG.status variable).", align = "left"),
                          h6("BCG.status legend: -1 = Past national BCG vaccination policy for all, 0 = BCG recommendation only for specific groups or none at all, 1 = Current national BCG vaccination policy for all", align = "left"),
-                         h6("2: World Health Organization (WHO: https://www.who.int/ to create BCG variable).", align = "left"),
+                         h6("2: World Bank Open Data (https://data.worldbank.org/ to create BCG variable).", align = "left"),
                          h6("BCG legend: 0[cross] = country-specific vaccination data not available in the WHO data (2009-2018); 1[check] = country-specific vaccination data available (2009-2018).", align = "left"),
-                         h6("Ref: Miller, A., Reandelar, M. J., Fasciglione, K., Roumenova, V., Li, Y., & Otazu, G. H. (2020). Correlation between universal BCG vaccination policy and reduced morbidity and mortality for COVID-19: an epidemiological study. medRxiv: https://tinyurl.com/covidBCG", align = "left"),
+                         #h6("Ref: Miller, A., Reandelar, M. J., Fasciglione, K., Roumenova, V., Li, Y., & Otazu, G. H. (2020). Correlation between universal BCG vaccination policy and reduced morbidity and mortality for COVID-19: an epidemiological study. medRxiv: https://tinyurl.com/covidBCG", align = "left"),
                          h6("**Note**: This app is not claiming any association between BCG vaccination and covid-19 morbidity / mortality. This app is simply a pictorial depiction of what the data shows.", align = "left")
                 ))
       ),
@@ -67,8 +66,8 @@ ui <- dashboardPage(
                 width = 12,
                 src = "https://raw.githubusercontent.com/ehsanx/ehsankarim/master/public/authors/admin/avatar_hued94dba2ab1c4ee0abf0e343e738c01c_361060_270x270_fill_q90_lanczos_center.jpg",
                 color = "blue",
-                "Data source: World Health Organization (WHO: https://www.who.int/), BCG world atlas (http://bcgatlas.org/) and Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE: https://github.com/CSSEGISandData/COVID-19). Data download functions from Joachim Gassen's github was used: https://github.com/joachim-gassen/tidy_covid19. Thanks to James Johnston [BCCDC: http://www.bccdc.ca/our-research/people/james-johnston] for informing me about the BCG world atlas webpage.",
-                footer = "Feel free to send me comments <ehsan.karim at ubc.ca> regarding how to update this app. Last updated: 5th April, 2020."
+                "Data sources: World Health Organization (WHO: https://www.who.int/), BCG world atlas (http://bcgatlas.org/) and Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE: https://github.com/CSSEGISandData/COVID-19). Data download functions from Joachim Gassen's github was used: https://github.com/joachim-gassen/tidy_covid19. Thanks to James Johnston [BCCDC: http://www.bccdc.ca/our-research/people/james-johnston] for informing me about the BCG world atlas webpage.",
+                footer = "Feel free to send me comments <ehsan.karim at ubc.ca> regarding how to update this app. All data / codes are available at https://github.com/ehsanx/covid19. Last updated: 23 April, 2020."
               )
       )
     )

@@ -68,7 +68,7 @@ save(jh_covid19_data, file="jhcovid19.RData")
 head(jh_covid19_data)
 
 lastx <- function(x) {last(na.omit(x))}
-d=10000
+d=100000000
 jh_covid19_data %>%
   group_by(iso3c) %>%
   arrange(iso3c, date) %>%
@@ -194,3 +194,5 @@ dta <- ex2(x="confirmed")
 dta$iso2c <- as.character(dta$iso2c)
 dta$iso2c[dta$iso3c=="NAM"] <- "NA"
 save(dta, file="jhwbxx.RData")
+
+saveRDS(dta, file="covid2.Rds")
