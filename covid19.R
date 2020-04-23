@@ -79,7 +79,7 @@ ui <- dashboardPage(
 server <- function(input, output,session) {
   output$map1 <- renderGvis({
     G <- gvisGeoChart(dta, locationvar = "iso2c", colorvar = "confirmed", 
-                      options=list(width=700, height=450,
+                      options=list(width=650, height=450,
                                    colorAxis = "{colors:['white','blue']}", 
                                    #backgroundColor = "lightblue",
                                    projection="kavrayskiy-vii"))
@@ -90,7 +90,7 @@ server <- function(input, output,session) {
   })
   output$map2 <- renderGvis({
     G <- gvisGeoChart(dta, locationvar = "iso2c", colorvar = "deaths", 
-                      options=list(width=700, height=450,
+                      options=list(width=650, height=450,
                                    colorAxis = "{colors:['white','red']}", 
                                    #backgroundColor = "lightblue",
                                    projection="kavrayskiy-vii"))
@@ -101,7 +101,7 @@ server <- function(input, output,session) {
   })
   output$map3 <- renderGvis({
     G <- gvisGeoChart(dta, locationvar = "iso2c", colorvar = "BCG.status", 
-                      options=list(width=700, height=450,
+                      options=list(width=650, height=450,
                                    colorAxis = "{colors:['orangered','yellow']}", 
                                    #backgroundColor = "lightblue",
                                    projection="kavrayskiy-vii"))

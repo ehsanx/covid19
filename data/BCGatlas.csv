@@ -1,0 +1,211 @@
+iso3c,BCG.year,BCG.status,country
+AFG,,1,Afghanistan
+AGO,1979,1,Angola
+ALB,,1,Albania
+AND,,-1,Andorra
+ARE,,1,United Arab Emirates
+ARG,,1,Argentina
+ARM,1998,1,Armenia
+ATG,,,Antigua and Barbuda
+AUS,1950,-1,Australia
+AUT,1952,-1,Austria
+AZE,,1,Azerbaijan
+BDI,,1,Burundi
+BEL,,0,Belgium
+BEN,,1,Benin
+BFA,,1,Burkina Faso
+BGD,1979,1,Bangladesh
+BGR,1951,1,Bulgaria
+BHR,,,Bahrain
+BHS,,,"Bahamas, The"
+BIH,1950,1,Bosnia and Herzegovina
+BLR,,1,Belarus
+BLZ,,1,Belize
+BOL,,1,Bolivia
+BRA,1976,1,Brazil
+BRB,,1,Barbados
+BRN,,,Brunei Darussalam
+BTN,1979,1,Bhutan
+BWA,,1,Botswana
+CAF,,1,Central African Republic
+CAN,1933,0,Canada
+CHE,1960,-1,Switzerland
+CHL,1947,1,Chile
+CHN,,1,China
+CIV,,1,Cote d'Ivoire
+CMR,,1,Cameroon
+COD,,1,"Congo, Dem. Rep."
+COG,,1,"Congo, Rep."
+COL,1960,1,Colombia
+CPV,,1,Cabo Verde
+CRI,,1,Costa Rica
+CUB,,1,Cuba
+CYP,,,Cyprus
+CZE,1953,-1,Czech Republic
+DEU,1961,-1,Germany
+DJI,,1,Djibouti
+DMA,,1,Dominica
+DNK,1946,-1,Denmark
+DOM,,1,Dominican Republic
+DZA,,1,Algeria
+ECU,,-1,Ecuador
+EGY,,1,"Egypt, Arab Rep."
+ERI,,1,Eritrea
+ESP,1965,-1,Spain
+EST,,1,Estonia
+ETH,1980,1,Ethiopia
+FIN,1941,-1,Finland
+FJI,,1,Fiji
+FRA,1950,-1,France
+GAB,,1,Gabon
+GBR,1953,-1,United Kingdom
+GEO,,1,Georgia
+GHA,,1,Ghana
+GIN,,1,Guinea
+GMB,1979,1,"Gambia, The"
+GNB,,1,Guinea-Bissau
+GNQ,,1,Equatorial Guinea
+GRC,,1,Greece
+GRD,,,Grenada
+GTM,,1,Guatemala
+GUY,,1,Guyana
+HND,,1,Honduras
+HRV,1948,1,Croatia
+HTI,,1,Haiti
+HUN,1953,1,Hungary
+IDN,1999,1,Indonesia
+IND,1948,1,India
+IRL,1950,1,Ireland
+IRN,1984,1,"Iran, Islamic Rep."
+IRQ,,1,Iraq
+ISL,,,Iceland
+ISR,1955,-1,Israel
+ITA,1970,0,Italy
+JAM,,1,Jamaica
+JOR,,1,Jordan
+JPN,1942,1,Japan
+KAZ,,1,Kazakhstan
+KEN,,1,Kenya
+KGZ,,1,Kyrgyz Republic
+KHM,,1,Cambodia
+KNA,,1,St. Kitts and Nevis
+KOR,1970,1,"Korea, Rep."
+KWT,,1,Kuwait
+LAO,,1,Lao PDR
+LBN,,0,Lebanon
+LBR,,1,Liberia
+LBY,,1,Libya
+LCA,,1,St. Lucia
+LIE,,,Liechtenstein
+LKA,,1,Sri Lanka
+LTU,,1,Lithuania
+LUX,,-1,Luxembourg
+LVA,1940,1,Latvia
+MAR,,,Morocco
+MCO,,,Monaco
+MDA,,1,Moldova
+MDG,,1,Madagascar
+MDV,,1,Maldives
+MEX,1951,1,Mexico
+MKD,1950,1,North Macedonia
+MLI,,1,Mali
+MLT,,1,Malta
+MMR,,1,Myanmar
+MNE,,,Montenegro
+MNG,,1,Mongolia
+MOZ,,,Mozambique
+MRT,,1,Mauritania
+MUS,,1,Mauritius
+MWI,,1,Malawi
+MYS,,1,Malaysia
+NAM,,1,Namibia
+NER,,1,Niger
+NGA,1991,1,Nigeria
+NIC,,1,Nicaragua
+NLD,,0,Netherlands
+NOR,,-1,Norway
+NPL,,1,Nepal
+NZL,1976,-1,New Zealand
+OMN,,1,Oman
+PAK,1978,1,Pakistan
+PAN,,1,Panama
+PER,1945,1,Peru
+PHL,,1,Philippines
+PNG,,1,Papua New Guinea
+POL,1955,1,Poland
+PRT,,1,Portugal
+PRY,,1,Paraguay
+PSE,,1,West Bank and Gaza
+QAT,,1,Qatar
+ROU,1928,1,Romania
+RUS,,1,Russian Federation
+RWA,1956,1,Rwanda
+SAU,1968,1,Saudi Arabia
+SDN,1976,1,Sudan
+SEN,1986,1,Senegal
+SGP,1955,1,Singapore
+SLE,1990,1,Sierra Leone
+SLV,1970,1,El Salvador
+SMR,,,San Marino
+SOM,,,NA
+SRB,,,Serbia
+SUR,,,Suriname
+SVK,1953,-1,Slovak Republic
+SVN,1947,-1,Slovenia
+SWE,1940,-1,Sweden
+SWZ,,,Eswatini
+SYC,,1,Seychelles
+SYR,,,NA
+TCD,,1,Chad
+TGO,,1,Togo
+THA,1977,1,Thailand
+TLS,,1,Timor-Leste
+TTO,,,Trinidad and Tobago
+TUN,,1,Tunisia
+TUR,1952,1,Turkey
+TWN,,,NA
+TZA,1975,1,Tanzania
+UGA,1987,1,Uganda
+UKR,1980,1,Ukraine
+URY,1980,1,Uruguay
+USA,,0,United States
+UZB,1937,1,Uzbekistan
+VAT,,,NA
+VCT,,1,St. Vincent and the Grenadines
+VEN,,1,"Venezuela, RB"
+VNM,1985,1,Vietnam
+ZAF,1973,1,South Africa
+ZMB,,1,Zambia
+ZWE,,1,Zimbabwe
+ABW,,,Aruba
+ASM,,,American Samoa
+BMU,,,Bermuda
+COM,,1,Comoros
+CYM,,,Cayman Islands
+FRO,,,Faroe Islands
+FSM,,1,"Micronesia, Fed. Sts."
+GRL,1955,1,Greenland
+GUM,,,Guam
+HKG,1952,1,"Hong Kong SAR, China"
+IMN,,,Isle of Man
+KIR,,1,Kiribati
+LSO,,1,Lesotho
+MAC,,,"Macao SAR, China"
+MHL,2004,1,Marshall Islands
+MNP,,,Northern Mariana Islands
+NRU,,,Nauru
+PLW,,,Palau
+PRI,,,Puerto Rico
+SLB,,1,Solomon Islands
+SSD,,,South Sudan
+STP,,1,Sao Tome and Principe
+TCA,,,Turks and Caicos Islands
+TJK,1992,1,Tajikistan
+TKM,,1,Turkmenistan
+TON,,1,Tonga
+TUV,,,Tuvalu
+VIR,,,Virgin Islands (U.S.)
+VUT,,1,Vanuatu
+WSM,,1,Samoa
+XKX,,,Kosovo
+YEM,,1,"Yemen, Rep."
