@@ -1,6 +1,6 @@
 # covid19 shiny package
 
-Deployed in [ehsanx.shinyapps.io/covid19/](https://ehsanx.shinyapps.io/covid19/)
+Deployed in [ehsanx.shinyapps.io/covid19/](https://ehsank.shinyapps.io/covid19/)
 
 **Note**: This app is not claiming any association between BCG vaccination and covid-19 morbidity / mortality. This app is simply a pictorial depiction of what the data shows.
 
