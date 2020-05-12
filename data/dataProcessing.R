@@ -172,7 +172,7 @@ save(wb.jh, file="wbank-jh.RData")
 
 
 require(tidyverse)
-bcg <- readRDS("BCGatlas.Rdata")
+bcg <- read.csv("BCGatlas.csv")
 head(wb.jh)
 wb.jh %>%
   group_by(iso3c) %>%
@@ -183,7 +183,9 @@ wb.jhx$iso2c <- countrycode(wb.jhx$iso3c, origin = 'iso3c', destination = 'iso2c
 wb.jh <- as.data.frame(wb.jhx)
 wb.jh$BCG <- wb.jh$IMM.IBCG > 0
 ex2 <- function(x="confirmed"){
-  wb.jhx <- wb.jh[c("iso2c","iso3c","country","confirmed","deaths", "BCG.status", "BCG.year", "BCG")]
+  wb.jhx <- wb.jh[c("iso2c","iso3c","country","population", "pop_density", "income",
+                    "confirmed","deaths", "BCG.status", 
+                    "BCG.year", "BCG")]
   wb.jhx %>%  
     arrange(-confirmed) %>% 
     filter(!is.na(deaths)) %>% 
@@ -195,4 +197,22 @@ dta$iso2c <- as.character(dta$iso2c)
 dta$iso2c[dta$iso3c=="NAM"] <- "NA"
 save(dta, file="jhwbxx.RData")
 
-saveRDS(dta, file="covid2.Rds")
+head(dta)
+table(dta$income)
+
+
+dta$'Confirmed cases' <- dta$confirmed
+dta$'Reported deaths' <- dta$deaths
+dta$'Confirmed by Population' <- dta$confirmed/dta$population
+dta$'Deaths by Population' <- dta$deaths/dta$population
+
+dta$'Confirmed by population density' <- dta$confirmed/dta$pop_density
+dta$'Confirmed by population density'[is.na(dta$'Confirmed by population density')] <- 0
+dta$'Deaths by population density' <- dta$deaths/dta$pop_density
+dta$'Deaths by population density'[is.na(dta$'Deaths by population density')] <- 0
+
+dta$'BCG world Atlas' <- dta$BCG.status
+dta$'BCG world Bank' <- dta$BCG
+
+head(dta)
+saveRDS(dta, file="covid.Rds")
