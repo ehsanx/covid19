@@ -75,6 +75,8 @@ ui <- dashboardPage(
               htmlOutput("map3"),
               tabsetPanel(
                 tabPanel(h4('Data sources'),
+                         h6("For context: take a look at the recent JAMA letter: URL: https://jamanetwork.com/journals/jama/fullarticle/2766182", align = "left"),
+                         h6("Hamiel U, Kozer E, Youngster I (2020) SARS-CoV-2 Rates in BCG-Vaccinated and Unvaccinated Young Adults. JAMA. doi:10.1001/jama.2020.8189", align = "left"),
                          h6("1: BCG world atlas (http://bcgatlas.org/ to create BCG.status variable).", align = "left"),
                          h6("BCG.status legend: -1 = Past national BCG vaccination policy for all, 0 = BCG recommendation only for specific groups or none at all, 1 = Current national BCG vaccination policy for all. Green = vaccination information missing.", align = "left"),
                          h6("2: World Bank Open Data (https://data.worldbank.org/ to create BCG variable).", align = "left"),
@@ -92,7 +94,7 @@ ui <- dashboardPage(
                 src = "https://raw.githubusercontent.com/ehsanx/ehsankarim/master/public/authors/admin/avatar_hued94dba2ab1c4ee0abf0e343e738c01c_361060_270x270_fill_q90_lanczos_center.jpg",
                 color = "blue",
                 "Data sources: World Health Organization (WHO: https://www.who.int/), BCG world atlas (http://bcgatlas.org/) and Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE: https://github.com/CSSEGISandData/COVID-19). Data download functions from Joachim Gassen's github was used: https://github.com/joachim-gassen/tidy_covid19. Thanks to James Johnston [BCCDC: http://www.bccdc.ca/our-research/people/james-johnston] for informing me about the BCG world atlas webpage.",
-                footer = "Feel free to send me comments <ehsan.karim at ubc.ca> regarding how to update this app. All data / codes are available at https://github.com/ehsanx/covid19. Last updated: 11 May, 2020."
+                footer = "Feel free to send me comments <ehsan.karim at ubc.ca> regarding how to update this app. All data / codes are available at https://github.com/ehsanx/covid19. Last updated: 17 May, 2020."
               )
       )
     )
@@ -111,7 +113,7 @@ server <- function(input, output,session) {
       }
     G <- gvisGeoChart(dtax, locationvar = "iso2c", colorvar = input$varc, 
                       options=list(width=650, height=450,
-                                   colorAxis = "{colors:['white','blue']}", 
+                                   colorAxis = "{colors:['yellow','blue']}", 
                                    #backgroundColor = "lightblue",
                                    projection="kavrayskiy-vii"))
     T <- gvisTable(dtax[c("country","iso2c","confirmed","deaths")], options=list(width=350, height=450))
@@ -128,7 +130,7 @@ server <- function(input, output,session) {
     }
     G <- gvisGeoChart(dtax, locationvar = "iso2c", colorvar = input$vard, 
                       options=list(width=650, height=450,
-                                   colorAxis = "{colors:['white','red']}", 
+                                   colorAxis = "{colors:['yellow','red']}", 
                                    #backgroundColor = "lightblue",
                                    projection="kavrayskiy-vii"))
     T <- gvisTable(dtax[c("country","iso2c","confirmed","deaths")], options=list(width=350, height=450))
@@ -145,7 +147,7 @@ server <- function(input, output,session) {
     }
     G <- gvisGeoChart(dtax, locationvar = "iso2c", colorvar = input$varb, 
                       options=list(width=650, height=450,
-                                   colorAxis = "{colors:['orangered','white']}", 
+                                   colorAxis = "{colors:['red','yellow']}", 
                                    #backgroundColor = "lightblue",
                                    projection="kavrayskiy-vii"))
     T <- gvisTable(dtax[c("country","iso2c","BCG", "BCG.status")], options=list(width=350, height=450))

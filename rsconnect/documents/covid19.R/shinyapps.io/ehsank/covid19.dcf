@@ -5,8 +5,8 @@ account: ehsank
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2174648
-bundleId: 3134481
+bundleId: 3159043
 url: https://ehsank.shinyapps.io/covid19/
-when: 1589247332.71857
+when: 1589749416.05434
 asMultiple: FALSE
 asStatic: FALSE

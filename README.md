@@ -2,6 +2,11 @@
 
 Deployed in [ehsank.shinyapps.io/covid19/](https://ehsank.shinyapps.io/covid19/)
 
+For context: take a look at the recent (JAMA letter)[https://jamanetwork.com/journals/jama/fullarticle/2766182]
+
+- Hamiel U, Kozer E, Youngster I (2020) SARS-CoV-2 Rates in BCG-Vaccinated and Unvaccinated Young Adults. JAMA. doi:10.1001/jama.2020.8189
+
+
 **Note**: This app is not claiming any association between BCG vaccination and covid-19 morbidity / mortality. This app is simply a pictorial depiction of what the data shows.
 
 Data sources: 
